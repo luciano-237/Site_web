@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Entreprise - Enfott</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="../boxicons-master/css/boxicons.min.css">
+</head>
+
+<body>
+
+  <!-- ===== MENU + ACCUEIL ===== -->
+  <section class="accu" id="accueil">
+    <input type="checkbox" id="check">
+    <div class="icon">
+      <div class="btn_one" id="btn_one">
+        <label for="check">
+          <i class='bx bx-menu hamburger'></i>
+          <h1 style ="color: black; margin-left: 70px; font-size: 40px; font-family: cambrias;">Enfott</h1>
+        </label>
+      </div>
+        <form id="searchForm" action="recherche.php" method="GET" class="search-form">
+            <input type="text" name="q" placeholder="Rechercher un produit..." required>
+            <button type="submit"><i class='bx bx-search'></i></button>
+        </form>
+      <div class="user_icon" id="user_icon">
+        <a href="mon_compte.php"><i class='bx bx-user'></i></a>
+      </div>
+    </div>
+
+    <div class="sidebar_menu">
+      <div class="logo">
+        <a href="#">Enfott</a>
+      </div>
+      <div class="btn_two">
+        <label for="check">
+          <i class='bx bx-x'></i>
+        </label>
+      </div>
+      <div class="menu">
+        <ul>
+          <li style="list-style-type: none;"><i class='bx bx-home'></i><a href="#accueil">Accueil</a></li>
+          <li style="list-style-type: none;"><i class='bx bx-store'></i><a href="produit.php">Vehicule à vendre</a></li>
+          <li style="list-style-type: none;"><i class='bx bx-wrench'></i><a href="location.php">Vehicles à louer</a></li>
+          <li style="list-style-type: none;"><i class='bx bx-comment'></i><a href="commentaires.php">Comments</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="mini-nav">
+      <a href=""><i><img src="logo.png" alt="" style="height: 50px; width: 50px; margin-top: 10px;"></i></a>
+    </div>
+
+    <div class="accueill">
+      <h1>Bienvenue Sur Enfott</h1>
+      <p><b>ENFOTT</b> est une entreprise innovante de vente et location de voitures confortables et luxueuses<br>
+        pour innover dans le présent et le futur.
+      </p>
+      <button onclick="window.location.href='login.php'"><b>Rejoignez-nous</b></button>
+
+    </div>
+  </section>
+
+  <!-- ===== À PROPOS ===== -->
+  <section class="apropos" id="apropos">
+    <h2>À propos</h2>
+    <div class="separe">
+      <div class="premiere">
+        
+        <p>
+          Bienvenue dans l’univers <b>Enfott</b> – là où l’automobile rencontre l’innovation, 
+          et où chaque trajet devient une expérience de luxe.<br><br>
+          Vous cherchez plus qu’un simple véhicule ? Parfait, nous vendons des rêves… à quatre roues !<br><br>
+          Chez <b>Enfott</b>, notre passion, c’est de transformer le vrombissement d’un moteur en mélodie, la technologie en confort, et le design en art.
+          Nous ne vendons pas juste des voitures, nous proposons des compagnons de route taillés pour le plaisir, la performance et le prestige.<br><br>
+          Que vous soyez amateur de vitesse, adepte du confort ou amoureux de l’électrique, notre garage numérique regorge de modèles exceptionnels : 
+          des bolides qui font tourner les têtes, des SUV qui dominent la route et des voitures connectées qui pensent presque à votre place (presque…).<br><br>
+          Et parce que votre temps est précieux, tout se fait ici, en ligne : explorer, comparer, acheter, faire livrer. En quelques clics, votre prochaine voiture vous attend. 
+          On s’occupe du reste.<br><br>
+          <b>Enfott : Roulez différemment. Vivez intensément.</b>
+        </p>
+      </div>
+      <div class="deuxieme"></div>
+    </div>
+  </section>
+
+  <section id="objectifs" style="background: #f5f7fa; padding: 60px 20px; font-family: 'cambria';">
+  <div style="max-width: 1100px; margin: auto;">
+    <h2 style="text-align: center; font-size: 38px; color: #0d1b2a; margin-bottom: 15px;">
+      🎯 Nos Objectifs Stratégiques
+    </h2>
+    <p style="text-align: center; font-size: 18px; color: #555; margin-bottom: 50px;">
+      Chez <strong>Enfott</strong>, nous mettons l'excellence, l'innovation et la satisfaction client au cœur de nos priorités pour offrir une expérience automobile de luxe inégalée.
+    </p>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+      
+      <!-- Objectif 1 -->
+      <div style="background: white; border-radius: 12px; padding: 30px; box-shadow: 0 6px 24px rgba(0,0,0,0.06);">
+        <h3 style="color:rgb(0, 172, 252); margin-bottom: 10px;">🚗 Large choix de véhicules haut de gamme</h3>
+        <p style="color: #444; font-size: 16px;">
+          Proposer une sélection complète de voitures de luxe : berlines, SUV, sportives, véhicules hybrides et électriques pour répondre aux goûts les plus exigeants de nos clients.
+        </p>
+      </div>
+
+      <!-- Objectif 2 -->
+      <div style="background: white; border-radius: 12px; padding: 30px; box-shadow: 0 6px 24px rgba(0,0,0,0.06);">
+        <h3 style="color:rgb(0, 172, 252); margin-bottom: 10px;">🤝 Service client personnalisé</h3>
+        <p style="color: #444; font-size: 16px;">
+          Offrir un accompagnement sur mesure à chaque étape : conseils, essais, achat, livraison, pour une relation de confiance à long terme.
+        </p>
+      </div>
+
+      <!-- Objectif 3 -->
+      <div style="background: white; border-radius: 12px; padding: 30px; box-shadow: 0 6px 24px rgba(0,0,0,0.06);">
+        <h3 style="color:rgb(0, 172, 252); margin-bottom: 10px;">🔧 Garantie & Entretien Premium</h3>
+        <p style="color: #444; font-size: 16px;">
+          Assurer un service après-vente réactif, des garanties fiables, et un entretien régulier dans nos ateliers agréés pour une tranquillité totale.
+        </p>
+      </div>
+
+      <!-- Objectif 4 -->
+      <div style="background: white; border-radius: 12px; padding: 30px; box-shadow: 0 6px 24px rgba(0,0,0,0.06);">
+        <h3 style="color:rgb(0, 172, 252); margin-bottom: 10px;">🌱 Transition écologique</h3>
+        <p style="color: #444; font-size: 16px;">
+          Intégrer des véhicules électriques et hybrides dans notre flotte pour contribuer à la réduction de l’empreinte carbone et promouvoir une mobilité durable.
+        </p>
+      </div>
+
+      <!-- Objectif 5 -->
+      <div style="background: white; border-radius: 12px; padding: 30px; box-shadow: 0 6px 24px rgba(0,0,0,0.06);">
+        <h3 style="color:rgb(0, 172, 252); margin-bottom: 10px;">🌍 Développement national</h3>
+        <p style="color: #444; font-size: 16px;">
+          Étendre notre réseau de points de vente et de location sur tout le territoire pour une meilleure accessibilité et visibilité.
+        </p>
+      </div>
+
+      <!-- Objectif 6 -->
+      <div style="background: white; border-radius: 12px; padding: 30px; box-shadow: 0 6px 24px rgba(0,0,0,0.06);">
+        <h3 style="color: rgb(0, 172, 252); margin-bottom: 10px;">👑 Réputation d'excellence</h3>
+        <p style="color: #444; font-size: 16px;">
+          Bâtir une image de marque forte fondée sur le luxe, la performance et la satisfaction client, tout en restant à la pointe de l’innovation automobile.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <section class="mp4">
+    <video autoplay muted loop playsinline>
+      <source src="original.mp4" type="video/mp4">
+      Votre navigateur ne supporte pas la vidéo HTML5.
+    </video>
+    <div class="content">
+    <h1>Nos services</h1>
+    <ol>
+      <li><b>🚗 Vente de véhicules innovants</b><br><br>Découvrez une sélection exclusive de véhicules haut de gamme alliant design, performance et technologie.<br>
+Notre catalogue comprend les dernières générations de voitures thermiques, hybrides et électriques, toutes équipées des innovations les plus récentes : <br>
+conduite semi-autonome, écrans tactiles immersifs, systèmes d’assistance avancée, connectivité mobile, etc. Que vous cherchiez une berline élégante, <br>
+un SUV spacieux ou une voiture de sport, vous trouverez un modèle qui répond à vos exigences les plus pointues.
+</li><br>
+      <li><b>🛒 Achat 100% en ligne</b><br><br> Achetez votre véhicule en toute simplicité, depuis chez vous.<br>
+Notre plateforme intuitive vous permet de parcourir notre gamme complète de véhicules, comparer les modèles, consulter les fiches techniques détaillées, <br>
+les photos HD et les avis clients. Une fois votre choix effectué, vous pouvez finaliser l’achat directement en ligne : paiement sécurisé, signature électronique,<br>
+choix de la livraison à domicile ou du retrait en agence. Un conseiller reste disponible à chaque étape pour vous accompagner si besoin.
+</li><br>
+
+      <li><b>🔄 Reprise et estimation instantanée</b><br><br>Faites estimer votre véhicule actuel en quelques clics.<br>
+Notre outil d’estimation en ligne analyse automatiquement la valeur de votre voiture selon son modèle, son kilométrage et son état général. Recevez une <br> 
+proposition de reprise claire et transparente en moins de 2 minutes. Si elle vous convient, vous pouvez la valider immédiatement et utiliser le montant estimé <br>
+comme acompte pour l’achat d’un nouveau véhicule. La reprise peut se faire chez vous ou en agence, à votre convenance.
+</li><br>
+    </ol>
+    </div>
+    
+  </section>
+
+  <!-- ===== PRODUITS ===== -->
+  <section class="services-section" id="Produit">
+    <h2>Produits</h2>
+    <div class="services-container">
+      <div class="service-card">
+        <img src="142585.jpg" alt="Roll Royce">
+        <h3>Roll Royce</h3>
+        <p>Elle représente le luxe ultime et l’artisanat d’exception. Alliant élégance, confort et puissance, chaque modèle est une œuvre d’ingénierie conçue pour offrir une expérience de conduite incomparable.</p>
+      </div>
+      <div class="service-card">
+        <img src="524729.jpeg" alt="Tundra">
+        <h3>Range Rover</h3>
+        <p>Elle est un pick-up robuste et fiable, idéal pour les travaux lourds et les aventures en plein air. Puissante et confortable, elle combine performance et durabilité.
+
+</p>
+      </div>
+      <div class="service-card">
+        <img src="1372760.jpg" alt="Férarri">
+        <h3>Férarri</h3>
+        <p>Elle incarne la passion, la vitesse et le luxe. Ces voitures de sport italiennes sont synonymes de performance exceptionnelle et de design élégant.
+
+</p>
+      </div>
+    </div>
+    <a class="button_P" href="produit.php">Voir plus</a>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="contact">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Enfott</h3>
+        <p>
+          Leader en mobilité intelligente et durable.<br>
+          Vente de véhicules innovants et services connectés.
+        </p>
+      </div>
+      <div class="footer-column">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#apropos">À propos</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#Produit">Produits</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <p>Email : <a href="mailto:autonova_entreprise@gmail.com">autonova_entreprise@gmail.com</a></p>
+        <p>Téléphone : 657-86-79-65 / 695-25-18-39</p>
+      </div>
+      <div class="footer-column">
+        <h4>Suivez-nous</h4>
+        <p>
+          <a href="#">Facebook</a><br>
+          <a href="#">Instagram</a><br>
+          <a href="#">LinkedIn</a>
+        </p>
+      </div>
+    </div>
+    <hr>
+    <p class="center">© 2025 Enfott. Tous droits réservés.</p>
+  </footer>  
+</body>
+</html>
+

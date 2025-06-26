@@ -1,0 +1,493 @@
+
+
+/* ========== BASE ========== */
+body {
+  margin: 0;
+  line-height: 1.6;
+  font-family: "Cambria", "Gotham SSm", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: white;
+}
+
+section {
+  padding: 0px;
+}
+
+ul {
+  list-style: square inside;
+}
+
+/* ========== ACCUEIL ========== */
+.accu {
+  background-color: whitesmoke;
+  height: 800px;
+  color: white;
+  position: relative;
+}
+
+
+
+.accueill {
+  position: relative;
+  background: transparent ;
+  background: url('back.jpg') center/cover no-repeat;
+  text-align: center;
+  height: 550px;
+  color: white;
+  padding-top: 45px;
+  padding-bottom: 15px;
+  z-index: 2;
+  margin-top: 150px; 
+  border-radius: 20px;
+  margin: 20px;
+  margin-top: 47px; 
+}
+
+.accueill h1 {
+  top: 200px;
+  margin: 130px auto 0;
+  font-size: 50px;
+  width: 600px;
+}
+
+.accueill p {
+  font-size: 17px;
+}
+
+.accueill button {
+  padding: 18px;
+  background-color: white;
+  color: black;
+  font-size: 17px;
+  border: solid white;
+  width: 180px;
+  margin-top: 22px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.accueill i {
+  position: fixed;
+  margin-left: 0;
+}
+
+/* ========== SIDEBAR ========== */
+.sidebar_menu {
+  position: fixed;
+  top: 0;
+  left: -330px;
+  width: 330px;
+  height: 100vh;
+  background-color: black;
+  box-shadow: 0 0 6px rgba(54, 48, 48, 0.5);
+  transition: left 0.3s ease;
+  z-index: 1001;
+}
+
+.sidebar_menu .logo {
+  height: 70px;
+  box-shadow: 0 0 6px rgba(255,255,255,0.5);
+}
+
+.sidebar_menu .logo a {
+  display: block;
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 70px;
+  text-decoration: none;
+}
+
+.sidebar_menu .menu {
+  margin-top: 30px;
+}
+
+.sidebar_menu .menu ul {
+  padding-left: 0;
+}
+
+.sidebar_menu .menu li {
+  padding: 20px;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.sidebar_menu .menu a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.sidebar_menu .menu i {
+  padding-right: 8px;
+  font-size: 20px;
+}
+
+.sidebar_menu .menu li:hover {
+  border-left: 1px solid #fff;
+  box-shadow: 0 0 4px rgba(255,255,255,0.5);
+}
+
+/* Menu burger */
+#check {
+  display: none;
+}
+
+.btn_one i {
+  position: absolute;
+  top: 20px;
+  left: 25px;
+  font-size: 40px;
+  color: black;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn_one i:hover {
+  font-size: 30px;
+}
+
+.btn_two i {
+  position: absolute;
+  top: 15px;
+  left: 280px;
+  font-size: 40px;
+  color: white;
+  opacity: 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#check:checked ~ .sidebar_menu {
+  left: 0;
+}
+
+#check:checked ~ .btn_one i {
+  opacity: 0;
+}
+
+#check:checked ~ .icon .btn_one {
+  display: none;
+}
+
+#check:checked ~ .sidebar_menu .btn_two i {
+  opacity: 1;
+}
+
+/* ========== À PROPOS ========== */
+.apropos {
+  background: url('ap.webp') center/cover no-repeat;
+  font-family: "Cambria";
+  height: 820px;
+  padding: 0;
+}
+
+.apropos p{
+  color: #444;
+}
+
+.separe {
+  display: flex;
+  height: 100%;
+}
+
+.premiere, .deuxieme {
+  padding: 50px 20px;
+  background: transparent;
+  border: none;
+}
+
+.premiere {
+  width: 35%;
+  font-size: 17px;
+  padding-top: 10px;
+}
+
+.deuxieme {
+  width: 65%;
+  font-size: 13px;
+}
+
+.apropos h2 {
+  font-size: 40px;
+  font-family: 'cambria';
+  text-align: center;
+}
+
+/* ========== SERVICES ========== */
+.services-section {
+  padding: 40px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.services {
+  background-color: #eaeaf0;
+  margin: 30px;
+  border-radius: 20px;
+  padding: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.services h2,
+.services-section h2 {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  width: 300px;
+
+}
+
+.service-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.service-card h3 {
+  margin-top: 15px;
+  font-size: 1.2em;
+}
+
+.service-card p {
+  font-size: 0.95em;
+  color: #555;
+}
+
+.button_P {
+  padding: 13px;
+  background-color: red;
+  color: white;
+  width: 150px;
+  border: none;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+/* ========== VIDÉO ========== */
+.mp4 {
+  position: relative;
+  width: 100%;
+  height: 120vh;
+  overflow: hidden;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+
+.mp4 video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+}
+
+.mp4 h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+.mp4 .content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  padding: 50px;
+  padding-left: 60px;
+
+}
+
+.mp4 .content li {
+font-size: 17px;
+
+}
+
+.mp4 .content b {
+font-size: 20px;
+
+}
+
+
+
+.video-full h1 {
+  margin-top: 40px;
+  font-size: 40px;
+  align-self: center;
+  text-align: center;
+}
+
+/* ========== OBJECTIFS MARQUEE ========== */
+.objectives-marquee {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  gap: 140px;
+  animation: scroll-marquee 60s linear infinite;
+}
+
+
+/* ========== FOOTER ========== */
+footer {
+  background-color: #1a1a1a;
+  color: #ccc;
+  padding: 40px 20px;
+  font-size: 14px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+footer h3, footer h4 {
+  color: white;
+}
+
+footer a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer hr {
+  border: 1px solid #333;
+  margin: 30px 0;
+}
+
+footer p.center {
+  text-align: center;
+  color: #777;
+}
+
+/* ========== BARRE D’ICÔNES (HAUT DE PAGE) ========== */
+.icon {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  background-color: white;
+  height: 50px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: 0 4px 12px rgba(8, 7, 7, 0.05);
+  width: auto;
+}
+
+.icon .bx {
+  font-size: 33px;
+  color: #332f2f;
+  cursor: pointer;
+}
+
+.user_icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  z-index: 999;
+}
+
+.user_icon i:hover {
+  font-size: 23px;
+}
+
+/* ========== BODY LOCKED (Menu ouvert) ========== */
+.body-locked {
+  overflow: hidden;
+  height: 100vh;
+  pointer-events: none;
+}
+
+.body-locked .sidebar_menu,
+.body-locked .btn_two,
+.body-locked .btn_one {
+  pointer-events: all;
+}
+
+.mini-nav{
+  height: auto;
+  background-color:rgb(31, 31, 31);
+  margin-top: 75px;
+  margin-bottom: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: auto;
+  text-align: center;
+  gap: 20px;
+}
+
+.mini-nav i{
+  color: whitesmoke;
+  font-size: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.search-user-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-form {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: white;
+    margin-right: 50px;
+}
+
+.search-form input {
+    border: none;
+    padding: 8px 12px;
+    outline: none;
+    width: 200px;
+}
+
+.search-form button {
+    border: none;
+    background-color: transparent;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
